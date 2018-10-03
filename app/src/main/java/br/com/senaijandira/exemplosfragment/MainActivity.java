@@ -1,13 +1,11 @@
 package br.com.senaijandira.exemplosfragment;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
 
 import br.com.senaijandira.exemplosfragment.fragments.Fragment1;
@@ -57,25 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
         //** FIM código tab **//
 
-        bottom_nav = findViewById(R.id.menu_botom_nav);
 
-        bottom_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                if(item.getItemId() == R.id.menu_frag1){
-                    openFragment1(null);
-                    return true;
-                }
 
-                if(item.getItemId() == R.id.menu_frag2){
-                    openFragment1(null);
-                    return true;
-                }
-
-                return false;
-            }
-        });
     }
 
     public void openFragment1(View view) {
