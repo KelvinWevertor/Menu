@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         ft.replace(R.id.frame_layout, new Fragment1());
 
         ft.commit();
+
+
     }
 
     public void openFragment2(View view) {

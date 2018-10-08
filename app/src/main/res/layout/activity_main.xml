@@ -22,12 +22,12 @@
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="FRAG 1" />
+            android:text="Livros Para Ler" />
 
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="FRAG 2" />
+            android:text="Livros Lidos" />
 
     </android.support.design.widget.TabLayout>
 
