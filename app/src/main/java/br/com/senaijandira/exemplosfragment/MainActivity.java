@@ -10,6 +10,7 @@ import android.view.View;
 
 import br.com.senaijandira.exemplosfragment.fragments.Fragment1;
 import br.com.senaijandira.exemplosfragment.fragments.Fragment2;
+import br.com.senaijandira.exemplosfragment.fragments.Fragment3;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
                 if (tab.getPosition() == 1) {
                     openFragment2(null);
+
+                }
+
+                if (tab.getPosition() == 2) {
+                    openFragment3(null);
 
                 }
             }
@@ -75,6 +81,14 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = fm.beginTransaction();
 
         ft.replace(R.id.frame_layout, new Fragment2());
+
+        ft.commit();
+    }
+
+    public void openFragment3(View view) {
+        FragmentTransaction ft = fm.beginTransaction();
+
+        ft.replace(R.id.frame_layout, new Fragment3());
 
         ft.commit();
     }

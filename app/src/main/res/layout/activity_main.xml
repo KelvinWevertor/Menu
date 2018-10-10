@@ -29,6 +29,11 @@
             android:layout_height="wrap_content"
             android:text="Livros Lidos" />
 
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biblioteca em Geral" />
+
     </android.support.design.widget.TabLayout>
 
     <FrameLayout
@@ -37,7 +42,17 @@
         android:layout_weight="1"
         android:id="@+id/frame_layout"/>
 
-
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="end|bottom"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:tint="#FFF"
+        android:onClick="abrirCadastro"
+        />
 
 
 </LinearLayout>
+
+
